@@ -1,29 +1,11 @@
-/*
-    demo_sha1.cpp - demo program of
- 
-    ============
-    SHA-1 in C++
-    ============
- 
-    100% Public Domain.
- 
-    Original C Code
-        -- Steve Reid <steve@edmweb.com>
-    Small changes to fit into bglibs
-        -- Bruce Guenter <bruce@untroubled.org>
-    Translation to simpler C++ Code
-        -- Volker Grabsch <vog@notjusthosting.com>
-*/
-
-#include "sha1.hpp"
+#include "sha1.h"
 #include <string>
 #include <iostream>
 using std::string;
 using std::cout;
 using std::endl;
 
-int main(int argc, const char *argv[])
-{
+int main(int argc, const char *argv[]) {
     const string input = "abc";
 
     SHA1 checksum;
